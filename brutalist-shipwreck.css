@@ -1,4 +1,4 @@
-/* Brutalist Stylesheet - Inspired by irishwrecksonline.net */
+/* Brutalist Stylesheet - CHAOS EDITION */
 
 /* Reset and Base */
 * {
@@ -12,13 +12,46 @@ body {
     font-size: 14px;
     line-height: 1.4;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #FFFF00; /* Bright yellow background */
     padding: 10px;
     max-width: 100%;
 }
 
-/* Typography - Brutalist simplicity */
-h1, h2, h3, h4, h5, h6 {
+/* Typography - Chaotic sizes and colors */
+h1 {
+    font-family: "Impact", "Arial Black", sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    margin: 50px 0 5px 0;
+    padding: 30px 5px 30px 5px;
+    color: #FF00FF; /* Magenta */
+    background-color: #00FFFF; /* Cyan */
+    border: 15px solid #FF0000;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 2px 0 15px 0;
+    padding: 20px;
+    color: #00FF00; /* Neon green */
+    background-color: #FF1493; /* Deep pink */
+    border: 1px dotted #FFFF00;
+}
+
+h3 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 48px;
+    margin: 0;
+    padding: 5px 50px 5px 2px;
+    color: #FFFFFF;
+    background-color: #0000FF; /* Blue */
+    border: 25px double #00FF00;
+}
+
+h4, h5, h6 {
     font-weight: bold;
     margin: 10px 0;
     font-family: "Times New Roman", Times, serif;
@@ -26,41 +59,61 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin: 5px 0;
+    padding: 0 0 15px 30px;
 }
 
-/* Links - Classic blue/purple */
+/* Links - Chaotic colors */
 a:link {
-    color: #0000EE;
+    color: #FF00FF;
     text-decoration: underline;
+    background-color: #00FF00;
+    padding: 10px 2px 10px 2px;
+    font-size: 24px;
+    border: 3px solid #FF0000;
 }
 
 a:visited {
-    color: #551A8B;
+    color: #FFFF00;
     text-decoration: underline;
+    background-color: #FF1493;
+    padding: 2px 10px 2px 10px;
+    font-size: 18px;
 }
 
 a:hover {
-    color: #FF0000;
+    color: #00FFFF;
+    background-color: #000000;
+    padding: 15px;
+    font-size: 32px;
 }
 
-/* Tables - Raw layout structure */
+/* Tables - Chaotic layout structure */
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
     width: 100%;
-    border: 1px solid #000000;
-    margin: 10px 0;
+    border: 20px ridge #FF00FF;
+    margin: 50px 0 2px 0;
+    padding: 0;
+    background-color: #00FFFF;
 }
 
-td, th {
-    border: 1px solid #000000;
-    padding: 8px;
+td {
+    border: 8px dashed #FF0000;
+    padding: 25px 2px 5px 40px;
     vertical-align: top;
     text-align: left;
+    background-color: #FFFF00;
+    margin: 10px;
 }
 
 th {
+    border: 3px dotted #00FF00;
+    padding: 2px 30px 2px 5px;
     font-weight: bold;
-    background-color: #f0f0f0;
+    background-color: #FF1493;
+    color: #FFFFFF;
+    font-size: 36px;
+    text-align: right;
 }
 
 /* Images - No styling, just basic display */
@@ -71,66 +124,126 @@ img {
     margin: 5px 0;
 }
 
-/* Horizontal rules - Visible structure */
+/* Horizontal rules - Chaotic structure */
 hr {
     border: none;
-    border-top: 1px solid #000000;
-    margin: 15px 0;
+    border-top: 25px double #FF00FF;
+    border-bottom: 8px dotted #00FF00;
+    margin: 60px 0 2px 0;
+    background-color: #FF0000;
+    height: 15px;
 }
 
-/* Forms - Minimal styling */
+/* Strong text - clashing emphasis */
+strong {
+    color: #00FFFF;
+    background-color: #FF1493;
+    padding: 15px 3px 15px 3px;
+    font-size: 28px;
+    border: 5px solid #FFFF00;
+}
+
+/* Em text - more chaos */
+em {
+    color: #FF00FF;
+    background-color: #00FF00;
+    font-style: normal;
+    font-weight: bold;
+    padding: 8px 20px 8px 20px;
+    font-size: 16px;
+}
+
+/* Forms - Chaotic styling */
 input, textarea, select {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
-    border: 1px solid #000000;
-    padding: 4px;
-    background-color: #ffffff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 32px;
+    border: 15px groove #FF00FF;
+    padding: 30px 2px 30px 2px;
+    background-color: #00FFFF;
+    color: #FF0000;
+    margin: 25px 5px 25px 5px;
 }
 
 button, input[type="submit"] {
-    font-family: "Times New Roman", Times, serif;
-    background-color: #f0f0f0;
-    border: 2px outset #cccccc;
-    padding: 4px 10px;
+    font-family: "Impact", sans-serif;
+    background-color: #FF1493;
+    color: #00FF00;
+    border: 20px outset #FFFF00;
+    padding: 40px 5px 40px 5px;
     cursor: pointer;
+    font-size: 48px;
+    margin: 10px 50px 10px 50px;
 }
 
 button:active, input[type="submit"]:active {
     border-style: inset;
+    background-color: #00FF00;
+    color: #FF00FF;
 }
 
-/* Lists - Simple and functional */
+/* Lists - Chaotic and inconsistent */
 ul, ol {
-    margin-left: 40px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-top: 25px;
+    margin-bottom: 2px;
+    padding: 40px 5px 40px 5px;
+    background-color: #00FF00;
+    border: 12px groove #FF00FF;
 }
 
 li {
-    margin: 3px 0;
+    margin: 15px 0 2px 0;
+    padding: 30px 10px 5px 10px;
+    font-size: 9px;
+    background-color: #FF1493;
+    color: #FFFF00;
+    border-left: 45px solid #00FFFF;
+    border-right: 2px solid #FF0000;
 }
 
-/* Blockquotes - Minimal indentation */
+li:nth-child(odd) {
+    font-size: 28px;
+    padding: 2px;
+    margin: 50px 0 0 0;
+}
+
+li:nth-child(even) {
+    font-size: 14px;
+    border-left: 5px solid #FFFFFF;
+}
+
+/* Blockquotes - Chaotic emphasis */
 blockquote {
-    margin: 10px 20px;
-    padding-left: 10px;
-    border-left: 2px solid #000000;
+    margin: 50px 2px 50px 2px;
+    padding: 60px 5px 60px 5px;
+    border-left: 35px solid #FF00FF;
+    border-right: 8px dotted #00FF00;
+    background-color: #FF0000;
+    color: #00FFFF;
+    font-size: 42px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 /* Pre-formatted text */
 pre, code {
     font-family: "Courier New", Courier, monospace;
-    font-size: 12px;
-    background-color: #f5f5f5;
-    padding: 5px;
-    border: 1px solid #000000;
+    font-size: 8px;
+    background-color: #00FF00;
+    color: #FF00FF;
+    padding: 40px 2px 40px 2px;
+    border: 18px ridge #FFFF00;
     display: block;
     overflow-x: auto;
+    margin: 30px 0 5px 0;
 }
 
 code {
     display: inline;
-    padding: 2px 4px;
+    padding: 25px 50px 25px 50px;
+    font-size: 22px;
+    background-color: #FF1493;
+    color: #FFFFFF;
+    border: 6px dashed #00FFFF;
 }
 
 /* No fancy responsive design - brutalist authenticity */
